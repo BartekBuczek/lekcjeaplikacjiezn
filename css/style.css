@@ -1,0 +1,62 @@
+:root{
+    --bannercolor: darkgreen;
+    --contentcolor: yellow;
+    --leftcolor: yellowgreen;
+    --rightcolor: yellowgreen;
+    --footcolor:darkslategray;
+    --bannerhight: 150px;
+    --contenthight: 450px;
+    --leftwidth:30%;
+    --midwidth:45%;
+}
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#banner{
+    position: absolute;
+    width: 100%;
+    height: var(--bannerhight);
+    background-color: var(--bannercolor);
+    
+}
+#content{
+    position: absolute;
+    top: var(--bannerhight);
+    width: 100%;
+    height: var(--contenthight);
+    background-color: var(--contentcolor);
+
+}
+#foot{
+    position: absolute;
+    top: calc(var( --bannerhight) + var(--contenthight));
+    width: 100%;
+    height: calc(100% - var(--bannerhight) - var(--contenthight));
+    background-color: var(--footcolor);
+
+}
+#left{
+    width: var(--leftwidth);
+    height: 100%;
+    background-color: var(--leftcolor);
+    float: left;
+}
+#mid{
+    width: var(--midwidth);
+    height: 100%;
+    float: left;
+}
+#right{
+    width: calc(100% - var(--midwidth) - var(--leftwidth));
+    height: 100%;
+    background-color: var(--rightcolor);
+    float: left;
+}
+.kontener{
+    padding: 20px;
+}
+#banner, #foot{
+    color: white;
+}
+ 
