@@ -59,4 +59,9 @@ body{
 #banner, #foot{
     color: white;
 }
- 
+.link{
+    cursor: pointer;
+}
+.link:hover{
+    text-decoration: underline;
+}
